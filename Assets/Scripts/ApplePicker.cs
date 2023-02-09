@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class ApplePicker : MonoBehaviour {
-    [Header("Set in Inspector")]
+    [Header("Inscribed: Set in Inspector")]
     public GameObject basketPrefab;
     public int numBaskets = 3;
     public float basketBottomY = -14f;
@@ -24,7 +24,7 @@ public class ApplePicker : MonoBehaviour {
         }
 	}
 	
-	public void AppleDestroyed()
+	public void AppleMissed()
     {
         // Destroy all of the falling apples
         GameObject[] tAppleArray = GameObject.FindGameObjectsWithTag("Apple");
